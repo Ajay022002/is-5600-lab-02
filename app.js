@@ -98,10 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     portfolioDetails.addEventListener('click', (event) => {
-             if (event.target.tagName === 'BUTTON') {
-                viewStock(event.target.id, stocks);
-            }
-        });
+        if (event.target.tagName === 'BUTTON') {
+            viewStock(event.target.id, stocks);
+        }
+    });
 }
 
     function populateForm(data) {
